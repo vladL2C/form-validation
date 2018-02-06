@@ -1,0 +1,15 @@
+form {
+  margin: auto;
+}
+
+.input.is-primary {
+  margin-bottom: 1rem;
+}
+
+.column.is-half.is-offset-one-quarter {
+  background: #47e4e4;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 3px red;
+}

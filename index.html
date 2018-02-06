@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Form validation </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="form.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  </head>
+  <body>
+   <div class="columns is-mobile">
+  <div class="column is-half is-offset-one-quarter">
+    <form>
+      <label> Email </label>
+      <input id="email" class="input is-primary" type="email" onblur="myValidation()">
+      <label> Email Confirmation </label>
+      <input class="input is-primary" type="email">
+      <label> Country </label>
+      <select name="countries">
+        <option value="New Zealand">New Zealand</option> 
+      </select><br>
+      <label> Zip Code</label>
+      <input class="input is-primary" type="text" pattern="[0-9]{4}" title="Four digit zip code">
+      <label> Password </label>
+      <input class="input is-primary" type="password" minlength="6">
+      <label> Password Confirmation </label>
+      <input class="input is-primary" type="password" minlength="6">
+
+      <button class="button is-link">Submit</button>
+
+    </form>
+  </div>
+</div> 
+    <script src="form.js"></script>
+  </body>
+</html>
